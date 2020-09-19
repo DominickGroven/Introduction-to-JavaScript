@@ -1,33 +1,49 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+function votingAge(age) {
+    if (age > 18) {
+        return true;
+    }
 
+    return false;
+}
+
+console.log(votingAge(16));
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-
-
-
+if (hour < 18) {
+    greeting = "Good day";
+}
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
-
-
+console.log(parseInt("1999"));
 
 //Task d: Write a function to multiply a*b 
 
 
 
+function multiply (a, b) {
+    const product = a * b;
+    return product;
+}
+
+console.log(multiply(1, 5));
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
+function dogAge(age) {
+    const dogAge = age * 7;
+    return dogAge
+};
+console.log(dogAge(17))
 
 
 
@@ -50,7 +66,34 @@
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
 
+function dogFeeder(weight, age) {
+    if (age >= 1) {
+        if (weight <= 5) {
+            return weight * 0.05;
+        }
+        if (weight <= 10) {
+            return weight * 0.04;
+        }
+        if (weight <= 15) {
+            return weight * 0.03
+        }
+        if (weight > 15) {
+            return weight * 0.02
+        } else if (age <= 1) {
+            if (age <= .333) {
+                return weight * 0.10;
+            }
+            if (age <= .58) {
+                return weight * 0.05;
+            }
+            if (age <= 1) {
+                return weight * 0.04;
+            }
+        }
 
+    }
+}
+console.log(dogFeeder(15, 1));
 
 
 /************************************************************** Task 4 **************************************************************/
@@ -67,14 +110,25 @@
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function miles(km) {
+    let miles = km / 1.609
+    return miles
+}
 
+console.log(miles(1))
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
 
+function centimeter(feet) {
+    let centimeter = feet * 30.48
 
+    return centimeter
+}
+
+console.log(centimeter(1))
 
 
 /************************************************************** Task 6 **************************************************************/
