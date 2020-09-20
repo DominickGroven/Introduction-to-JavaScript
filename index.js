@@ -135,7 +135,22 @@ console.log(centimeter(1))
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
+  function annoyingSong(){
+      var bottles
+      var bottlesLeft
+      for (i = 999; i >= 1 i--){
+          if (i == 1){
+              bottles = "bottle";
+              bottlesLeft = "No bottles of beer on the wall!";
+          }else { 
+              bottles = "bottles";
+              bottlesLeft = i-1 + "bottles of beer on the wall!";
+          }console.log(i+" " + bottles+" bottles of beer on the wall,");
+          console.log(i+" " + bottles + " of beer,");
+          console.log("Take one down, pass it around,");
+          console.log(bottlesLeft);
+      }
+  }
 
 
 
@@ -149,7 +164,25 @@ console.log(centimeter(1))
 //60s should be D 
 //and anything below 60 should be F
   
+function gradeCalc(grade) {
+    if (grade > 90) {
+        return "A"
+    }
+    if (grade >= 80) {
+        return "B"
+    }
+    if (grade >= 70) {
+        return "C"
+    }
+    if (grade >= 60) {
+        return "D"
+    }
+    if (grade < 60) {
+        return "F"
+    }
+}
 
+console.log(gradeCalc(75))
   
   
 
@@ -157,7 +190,6 @@ console.log(centimeter(1))
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
-
 
 
 
